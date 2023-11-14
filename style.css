@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(34, 34, 38);
+    overflow: hidden;
+}
+
+.parents{
+    height: 100vh;
+    width: 100vw;
+}
+.parent, .parents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    color: red;
+    position: absolute;
+}
+div[name="child"]{
+    height: 377px;
+    width: 377px;
+    border: 2px solid white;
+    position: fixed;
+
+}
+div[id="1"]{
+    border-radius: 65% 35% 51% 49% / 40% 69% 31% 60%;
+    animation: spin infinite 4.8s;
+}
+div[id="2"]{
+    border-radius:37% 63% 44% 56% / 53% 50% 50% 47%  ;
+    animation: spin infinite 3s;
+}
+div[id="3"]{
+    border-radius:70% 30% 73% 27% / 25% 67% 33% 75%  ;
+    animation: spin infinite 8.2s;
+}
+div[id="4"]{
+    border-radius:55% 45% 53% 47% / 51% 52% 48% 49%  ;
+    animation: spin infinite 5.87s;
+}
+div[id="5"]{
+    border-radius:36% 64% 61% 39% / 53% 56% 44% 47% ;
+    animation: spin infinite 6.5s;
+}
+div[id="6"]{
+    border-radius:47% 53% 55% 45% / 60% 47% 53% 40% ;
+    animation: spin infinite 2.3s;
+}
+.child:hover{
+    border-radius: 0;
+    animation: sqr infinite 1s;
+
+}
+#ultimate{
+    background-color: rgba(34, 34, 38,0);
+    height: 360px;
+    width: 360px;
+    position: fixed;
+}
+#ultimate:hover{
+    background-color:rgb(34, 34, 38);
+    border-radius: 200px;
+    cursor: pointer;
+    background-image: url(./deadserver.gif);
+    
+}
+
+@keyframes spin {
+    0%{
+       border: 1px blue solid;
+        
+    }
+    10%{
+        border: 1px solid white;
+    }
+    100%{
+        rotate: 1080deg;
+        border: 1px blue solid;
+    }
+}
